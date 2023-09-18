@@ -1,46 +1,44 @@
 Algoritmo "semnome"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 14/09/2023
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    i : inteiro
    nota : real
    media : real
    soma : real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   para i de 1 ate 2 passo 1 faca
-      escreva("Digite a nota para o aluno: ")
-      Leia(nota)
-      Limpatela
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 
+  para i de 1 ate 2 passo 1 faca
+      escreva ("Informe a" ,i, "Â° nota do aluno: ")
+      Leia(nota)
+      limpatela
       enquanto (nota < 0) ou (nota > 10) faca
-         escreval ("A nota informada é invalida.")
+         escreval ("A nota informada Ã© invalida.")
          escreval ("Digite novamente.")
          escreval ("")
-         escreva ("Digite uma nota para o aluno: ")
+         escreva ("Digite a 1Â° nota para o aluno: ")
          leia (nota)
       Fimenquanto
-
       soma <- soma + nota
    Fimpara
 
    Media <- soma / 2
 
    Se (media >= 7) entao
-      escreval("Aluno aprovado, parabéns!")
+      escreval("Aluno aprovado, parabÃ©ns!")
    Fimse
 
-   Se(media <= 5) e (media >= 7) entao
-      escreval("Aluno em recuperação!")
+   Se(media >= 5) e (media < 7) entao
+      escreval("Aluno em recuperaÃ§Ã£o!")
    Fimse
-   
+
    Se (Media < 5) entao
       escreval ("Aluno reprovado")
    Fimse
 
+   escreval ("MÃ©dia do aluno: ", media)
 Fimalgoritmo
